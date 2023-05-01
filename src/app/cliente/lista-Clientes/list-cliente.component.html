@@ -1,0 +1,32 @@
+<div>
+    <h3>Lista Clientes</h3>
+    <div>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Correo</td>
+                    <td>Telefono</td>
+                    <td>id</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listaClientes">
+                    
+                        <td>{{item.nombre}}</td>
+                        <td>{{item.apellido}}</td>
+                        <td>{{item.correo}}</td>
+                        <td>{{item.telefono}}</td>
+                        <td>{{item.id}}</td>
+                        <td>
+                    <a class="btn btn-success"  href="#">Editar</a>
+                    <a class="btn btn-danger" href="#">Eliminar</a>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
